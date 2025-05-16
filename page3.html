@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - rgrt4h5h Restaurant</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            color: #dcdcdc;
+            background-color: #282828;
+            margin: 0;
+            padding: 0;
+        }
+        header, footer {
+            background-color: #1a1a1a;
+            padding: 25px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: space-evenly;
+            padding: 15px;
+            background-color: #2e2e2e;
+        }
+        nav a {
+            color: #dcdcdc;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        main {
+            padding: 25px;
+        }
+        section {
+            margin-bottom: 25px;
+            padding: 25px;
+            border-radius: 8px;
+        }
+        .hero {
+            background: url('https://source.unsplash.com/1600x900/?gourmet') no-repeat center center;
+            background-size: cover;
+            text-align: center;
+            color: #fff;
+            padding: 100px 20px;
+        }
+        .about, .contact {
+            background-color: #262626;
+        }
+        .services, .testimonials {
+            background-color: #3b3b3b;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 20px;
+        }
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+        }
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+        }
+        .contact-form input, .contact-form textarea {
+            margin-top: 10px;
+            padding: 10px;
+            border-radius: 4px;
+            border: none;
+            background-color: #494949;
+            color: #fff;
+        }
+        .contact-form button {
+            margin-top: 20px;
+            padding: 12px;
+            background-color: #6b6b6b;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .contact-form button:hover {
+            background-color: #575757;
+        }
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+            }
+            .hero {
+                padding: 70px 10px;
+            }
+        }
+        @media (max-width: 480px) {
+            .contact-form input, .contact-form textarea, .contact-form button {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Contact rgrt4h5h Restaurant</h1>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#testimonials">Testimonials</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<main>
+    <section class="hero">
+        <h2>Reach Out to Us</h2>
+        <p>Your experience is our priority, contact us for inquiries and reservations.</p>
+    </section>
+
+    <section class="about" id="about">
+        <h2>About re5</h2>
+        <p>Re5 is dedicated to providing an unparalleled dining experience, where every dish is a journey of flavors and every moment is an opportunity to savor the extraordinary. Our restaurant is a sanctuary for those who appreciate the fine art of dining, blending traditional culinary techniques with contemporary flair. We cater to individuals who value quality, creativity, and a personal touch in their dining experiences.</p>
+        <p>Our patrons include local residents, tourists, and culinary enthusiasts seeking a unique gastronomic adventure. We are committed to sustainability and excellence, sourcing the finest ingredients to create a menu that is both diverse and innovative. Our aim is to offer an experience that is not just about eating, but about enjoying a symphony of tastes in a warm, welcoming environment.</p>
+        <ul>
+            <li>Artisanal dishes and seasonal specials</li>
+            <li>Relaxing and sophisticated setting</li>
+            <li>Friendly and knowledgeable staff</li>
+            <li>Tailored dining experiences</li>
+            <li>Exclusive events and catering services</li>
+        </ul>
+    </section>
+
+    <section class="services" id="services">
+        <h2>Our Services</h2>
+        <div class="grid">
+            <div>
+                <img src="https://source.unsplash.com/400x300/?fine-dining" alt="Fine Dining">
+                <h3>Exquisite Dining</h3>
+                <p>Indulge in our selection of gourmet dishes crafted with precision and passion.</p>
+            </div>
+            <div>
+                <img src="https://source.unsplash.com/400x300/?restaurant-ambiance" alt="Ambiance">
+                <h3>Elegant Ambiance</h3>
+                <p>Experience dining in a beautifully designed space that enhances every meal.</p>
+            </div>
+            <div>
+                <img src="https://source.unsplash.com/400x300/?coffee" alt="Coffee">
+                <h3>Gourmet Beverages</h3>
+                <p>Savor our expertly curated selection of beverages, from fine wines to specialty coffees.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials" id="testimonials">
+        <h2>Testimonials</h2>
+        <div class="grid">
+            <div>
+                <i class="fas fa-quote-left"></i>
+                <p>"A delightful dining experience! Each dish was a masterpiece, and the staff was exceptional."</p>
+                <p>- Emily S.</p>
+            </div>
+            <div>
+                <i class="fas fa-quote-left"></i>
+                <p>"The perfect setting for a special occasion. The food and ambiance were simply outstanding."</p>
+                <p>- James T.</p>
+            </div>
+            <div>
+                <i class="fas fa-quote-left"></i>
+                <p>"A culinary journey that exceeded all expectations. Highly recommend for any food lover."</p>
+                <p>- Olivia P.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2>Contact Us</h2>
+        <div class="contact-form">
+            <input type="text" placeholder="Your Name">
+            <input type="email" placeholder="Your Email">
+            <textarea rows="5" placeholder="Your Message"></textarea>
+            <button>Send Message</button>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>Connect with us on social media</p>
+    <a href="#"><i class="fab fa-facebook-f"></i></a>
+    <a href="#"><i class="fab fa-twitter"></i></a>
+    <a href="#"><i class="fab fa-instagram"></i></a>
+</footer>
+
+</body>
+</html>
